@@ -1,0 +1,114 @@
+/* reset */
+
+html,body,div,p,h1,h2,h3,h4,h5,h6,
+ul,ol,li,dl,dt,dd,form,fieldset,caption,
+table,tr,td,th, address,blockquote,img {
+  margin:0;
+  padding:0;
+}
+
+img, fieldset {
+  border:none;
+}
+
+*, *:after, *:before {
+  box-sizing:border-box;
+  flex:1 0 auto;
+}
+
+html, body {
+  height:100%;
+}
+
+body, button, input, table, textarea, select {
+  font:normal 1em/1.5 arial,helvetica,sans-serif;
+}
+
+/* END reset */
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    margin: 0 auto;
+    min-width: 750px;
+    max-width: 1024px;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-container {
+    display: grid;
+    /* columns: date description type amount margin */
+    grid-template-columns: 160px auto 120px 150px 50px;
+}
+
+.cell.aligned-right {
+    text-align: right;
+    grid-column: 4;
+}
+
+.heading {
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #009578;
+}
+
+.cell {
+    padding: 7px 5px;
+}
+
+.input,
+.delete-entry {
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #bbbbbb;
+}
+
+.delete-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background: none;
+    color: red;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete-entry:hover {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.budget-tracker footer {
+    margin-top: 1rem;
+}
+
+.new-entry {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.summary {
+    font-size: 1.2rem;
+}
+
+

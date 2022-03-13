@@ -1,0 +1,23 @@
+html,body,div,p,h1,h2,h3,h4,h5,h6,
+ul,ol,li,dl,dt,dd,form,fieldset,caption,
+table,tr,td,th, address,blockquote,img {
+  margin:0;
+  padding:0;
+}
+
+img, fieldset {
+  border:none;
+}
+
+*, *:after, *:before {
+  box-sizing:border-box;
+  flex:1 0 auto;
+}
+
+html, body {
+  height:100%;
+}
+
+body, button, input, table, textarea, select {
+  font:normal 1em/1.5 arial,helvetica,sans-serif;
+}
