@@ -1,4 +1,4 @@
-import Entry from '../views/entry.js'
+import Entry from '../../views/entry.js'
 import { getNamedProperties } from './utils.js'
 
 // Note: importing npm uuid would be a better option
@@ -41,7 +41,7 @@ const handlers = (entries) => {
     }
 
     const updateEntry = ({ target }) => {
-    
+
         const fieldSet = target.closest('.entry')
         const props = getNamedProperties(fieldSet.elements)
 
