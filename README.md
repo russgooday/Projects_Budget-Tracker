@@ -3,7 +3,7 @@
 # Budget Tracker
 At it's core this is quite a basic project, but as a learning and development exercise I wanted to explore some more advanced techniques.
 
-Firstly I have experimented with proxies. The budget entries are wrapped in a proxy object, that on mutation (add, delete, update) invoke a callback passing in the mutated data — comparable to adding an eventListener to the budget entries object.
+Firstly I have experimented with proxies and reflection. The budget entries are wrapped in a proxy object, that on mutation (add, delete, update) invoke a callback passing in the mutated data — comparable to adding an eventListener to the budget entries object.
 
 In this use case the callback updates and renders the new total and stores the updated entries in localStorage.
 
